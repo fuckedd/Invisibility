@@ -33,6 +33,7 @@ local function makeInvisible()
     seat.Parent = workspace
     seat.CFrame = root.CFrame
     seat.Anchored = false
+    seat.Size = Vector3.new(2, 1, 1)
     seat.Transparency = 1
 
     
