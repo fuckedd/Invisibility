@@ -88,6 +88,7 @@ local function onKeyPress(input)
         local textBoxFocused = userInputService:GetFocusedTextBox()
         if not textBoxFocused then
             toggleInvisibility()
+            wait(0.2)
         end
     end
 end
