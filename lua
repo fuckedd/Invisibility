@@ -84,7 +84,7 @@ local function toggleInvisibility()
 end
 
 local function onKeyPress(input)
-    if input.KeyCode == Enum.KeyCode.Q then
+    if input.KeyCode == Enum.KeyCode.F then
         local textBoxFocused = userInputService:GetFocusedTextBox()
         if not textBoxFocused then
             toggleInvisibility()
