@@ -4,6 +4,7 @@ local invisible = false
 local seat = nil
 local weld = nil
 local originalTransparency = {}
+local oldPos = nil
 
 local function makeInvisible()
     local player = game:GetService("Players").LocalPlayer
@@ -46,6 +47,7 @@ local function makeInvisible()
     seat.CFrame = oldPos
 
     invisible = true
+    root.CFrame = oldPos -- Teleport back to the original position
 end
 
 local function makeVisible()
